@@ -1,0 +1,7 @@
+.build/
+*META.yml
+*META.json
+*~
+*.bak
+*.tar.gz
+Time-Duration-pl-*
