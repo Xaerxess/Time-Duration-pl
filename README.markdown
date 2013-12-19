@@ -132,7 +132,7 @@ Aperghis-Tramoni.
 # BUGS
 
 Please report any bugs or feature requests through the web interface at
-[https://github.com/Xaerxess/Time-Duration-pl](https://github.com/Xaerxess/Time-Duration-pl).
+[https://github.com/Xaerxess/Time-Duration-pl/issues](https://github.com/Xaerxess/Time-Duration-pl/issues).
 
 # SUPPORT
 

@@ -335,7 +335,7 @@ L<Time::Duration>, L<Time::Duration::Locale>
 =head1 BUGS
 
 Please report any bugs or feature requests through the web interface at
-L<https://github.com/Xaerxess/Time-Duration-pl>.
+L<https://github.com/Xaerxess/Time-Duration-pl/issues>.
 
 
 =head1 SUPPORT
