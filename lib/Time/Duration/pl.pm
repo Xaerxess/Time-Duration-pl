@@ -200,12 +200,12 @@ C<Time::Duration::pl> is a localized version of C<Time::Duration>.
 
 =over
 
-=item duration($seconds)
+=item C<duration($seconds)>
 
-=item duration($seconds, $precision)
+=item C<duration($seconds, $precision)>
 
 Returns English text expressing the approximate time duration
-of C<abs($seconds)>, with at most S<C<$precision || 2>> expressed units.
+of C<abs($seconds)>, with at most C<$precision || 2> expressed units.
 
 Examples:
 
@@ -217,7 +217,7 @@ Examples:
     duration(243550, 4) => '2 dni, 19 godzin, 39 minut i 10 sekund'
 
 
-=item duration_exact($seconds)
+=item C<duration_exact($seconds)>
 
 Same as C<duration($seconds)>, except that the returned value is an exact
 (unrounded) expression of C<$seconds>.
@@ -227,13 +227,13 @@ Example:
     duration_exact(31629659) => '1 rok, 1 dzień, 2 godziny i 59 sekund'
 
 
-=item ago($seconds)
+=item C<ago($seconds)>
 
-=item ago($seconds, $precision)
+=item C<ago($seconds, $precision)>
 
-=item ago_exact($seconds)
+=item C<ago_exact($seconds)>
 
-Negative values are passed to C<from_now()> / C< from_now_exact()>.
+Negative values are passed to C<from_now()> / C<from_now_exact()>.
 
 Examples:
 
@@ -247,13 +247,13 @@ Examples:
     ago(-243550, 1)     => 'za 3 dni'
 
 
-=item from_now($seconds)
+=item C<from_now($seconds)>
 
-=item from_now($seconds, $precision)
+=item C<from_now($seconds, $precision)>
 
-=item from_now_exact($seconds)
+=item C<from_now_exact($seconds)>
 
-Negative values are passed to C<ago()> / C< ago_exact()>.
+Negative values are passed to C<ago()> / C<ago_exact()>.
 
 Examples:
 
@@ -266,13 +266,13 @@ Examples:
     from_now(-243550, 1)=> '3 dni temu'
 
 
-=item later($seconds)
+=item C<later($seconds)>
 
-=item later($seconds, $precision)
+=item C<later($seconds, $precision)>
 
-=item later_exact($seconds)
+=item C<later_exact($seconds)>
 
-Negative values are passed to C<ago()> / C< ago_exact()>.
+Negative values are passed to C<ago()> / C<ago_exact()>.
 
 Examples:
 
@@ -285,13 +285,13 @@ Examples:
     later(-243550, 1)   => '3 dni wcześniej'
 
 
-=item earlier($seconds)
+=item C<earlier($seconds)>
 
-=item earlier($seconds, $precision)
+=item C<earlier($seconds, $precision)>
 
-=item earlier_exact($seconds)
+=item C<earlier_exact($seconds)>
 
-Negative values are passed to C<ago()> / C< ago_exact()>.
+Negative values are passed to C<ago()> / C<ago_exact()>.
 
 Examples:
 
@@ -304,7 +304,7 @@ Examples:
     earlier(-243550, 1) => '3 dni później'
 
 
-=item concise( I<function(> ... ) )
+=item C<concise(...)>
 
 C<concise()> takes the string output of one of the above functions
 and makes it more concise.

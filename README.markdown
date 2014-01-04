@@ -18,11 +18,11 @@ version 0.002
 
 # FUNCTIONS
 
-- duration($seconds)
-- duration($seconds, $precision)
+- `duration($seconds)`
+- `duration($seconds, $precision)`
 
     Returns English text expressing the approximate time duration
-    of `abs($seconds)`, with at most `$precision&nbsp;||&nbsp;2` expressed units.
+    of `abs($seconds)`, with at most `$precision || 2` expressed units.
 
     Examples:
 
@@ -33,7 +33,7 @@ version 0.002
         duration(243550, 3) => '2 dni, 19 godzin i 39 minut'
         duration(243550, 4) => '2 dni, 19 godzin, 39 minut i 10 sekund'
 
-- duration\_exact($seconds)
+- `duration_exact($seconds)`
 
     Same as `duration($seconds)`, except that the returned value is an exact
     (unrounded) expression of `$seconds`.
@@ -42,11 +42,11 @@ version 0.002
 
         duration_exact(31629659) => '1 rok, 1 dzień, 2 godziny i 59 sekund'
 
-- ago($seconds)
-- ago($seconds, $precision)
-- ago\_exact($seconds)
+- `ago($seconds)`
+- `ago($seconds, $precision)`
+- `ago_exact($seconds)`
 
-    Negative values are passed to `from_now()` / ` from_now_exact()`.
+    Negative values are passed to `from_now()` / `from_now_exact()`.
 
     Examples:
 
@@ -59,11 +59,11 @@ version 0.002
         ago(-243550)        => 'za 2 dni i 20 godzin'
         ago(-243550, 1)     => 'za 3 dni'
 
-- from\_now($seconds)
-- from\_now($seconds, $precision)
-- from\_now\_exact($seconds)
+- `from_now($seconds)`
+- `from_now($seconds, $precision)`
+- `from_now_exact($seconds)`
 
-    Negative values are passed to `ago()` / ` ago_exact()`.
+    Negative values are passed to `ago()` / `ago_exact()`.
 
     Examples:
 
@@ -75,11 +75,11 @@ version 0.002
         from_now(-243550)   => '2 dni i 20 godzin temu'
         from_now(-243550, 1)=> '3 dni temu'
 
-- later($seconds)
-- later($seconds, $precision)
-- later\_exact($seconds)
+- `later($seconds)`
+- `later($seconds, $precision)`
+- `later_exact($seconds)`
 
-    Negative values are passed to `ago()` / ` ago_exact()`.
+    Negative values are passed to `ago()` / `ago_exact()`.
 
     Examples:
 
@@ -91,11 +91,11 @@ version 0.002
         later(-243550)      => '2 dni i 20 godzin wcześniej'
         later(-243550, 1)   => '3 dni wcześniej'
 
-- earlier($seconds)
-- earlier($seconds, $precision)
-- earlier\_exact($seconds)
+- `earlier($seconds)`
+- `earlier($seconds, $precision)`
+- `earlier_exact($seconds)`
 
-    Negative values are passed to `ago()` / ` ago_exact()`.
+    Negative values are passed to `ago()` / `ago_exact()`.
 
     Examples:
 
@@ -107,7 +107,7 @@ version 0.002
         earlier(-243550)    => '2 dni i 20 godzin później'
         earlier(-243550, 1) => '3 dni później'
 
-- concise( _function(_ ... ) )
+- `concise(...)`
 
     `concise()` takes the string output of one of the above functions
     and makes it more concise.
